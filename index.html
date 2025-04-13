@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ChatGPT 中文版镜像站 - 中国大陆直连无需翻墙，免费使用 GPT-4o、GPT-o1、GPT-o3、DeepSeek R1 等顶级AI模型。国内最稳定的ChatGPT替代品，支持多模型对话、AI绘画和PPT生成【2025年最新更新】">
-    <meta name="keywords" content="ChatGPT中文版,GPT镜像站,ChatGPT国内平替,AI助手,GPT-4o,无需翻墙,GPT免费使用,DeepSeek R1,ChatGPT国内怎么用,Bing AI替代品">
+    <meta name="description" content="ChatGPT中文版镜像站 - 国内直连无需翻墙，免费使用GPT-4o等顶级模型。最稳定可靠的ChatGPT替代品，支持多模型对话与AI绘画">
+    <meta name="keywords" content="ChatGPT中文版,GPT镜像站,ChatGPT国内,GPT-4o,无需翻墙,DeepSeek R1">
     <meta name="msvalidate.01" content="52A92BA740603E7AC61DDAD329DBBFCA" />
-    <title>ChatGPT 中文版 | 国内直连指南 - 免费使用GPT-4o、GPT-o1、GPT-o3【<span id="current-year">2025</span>年<span id="current-month-title">4</span>月最新更新】</title>
+    <title>ChatGPT中文版 | 国内直连使用GPT-4o/o1/o3【最新更新】</title>
     <link rel="canonical" href="https://chat.aibox365.cn" />
     
     <!-- 结构化数据标记 - FAQ -->
@@ -791,9 +791,28 @@
         const currentMonth = currentDate.getMonth() + 1; // JavaScript 月份从 0 开始
         const currentYear = currentDate.getFullYear();
         
-        // 更新页面标题中的月份（需要在HTML head部分添加id）
-        if (document.title.includes('月最新更新')) {
-            document.title = document.title.replace(/【\d+年\d+月最新更新】/, `【${currentYear}年${currentMonth}月最新更新】`);
+        // 更新meta description中的月份信息（如果需要）
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+            let content = metaDescription.getAttribute('content');
+            if (content.includes('镜像站')) {
+                content = `ChatGPT中文版镜像站(${currentYear}年${currentMonth}月更新) - 国内直连无需翻墙，免费使用GPT-4o等顶级模型。最稳定可靠的ChatGPT替代品，支持多模型对话与AI绘画`;
+                metaDescription.setAttribute('content', content);
+            }
+        }
+        
+        // 更新页面中所有需要显示月份的元素
+        const monthElements = document.querySelectorAll('[id^="current-month"]');
+        monthElements.forEach(el => {
+            el.textContent = currentMonth;
+        });
+        
+        // 更新页面中所有需要显示年份的元素
+        const yearElements = document.querySelectorAll('[id^="current-year"]');
+        yearElements.forEach(el => {
+            el.textContent = currentYear;
+        });
+        
         // 标记所有外部链接为nofollow
         document.addEventListener('DOMContentLoaded', function() {
             const links = document.querySelectorAll('a');
