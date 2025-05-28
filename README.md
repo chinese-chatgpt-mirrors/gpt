@@ -12,6 +12,8 @@
 
 - 🏆 [chat.aibox365.cn](https://chat.aibox365.cn) - 支持全系列顶级模型，国内直连
 - 🥇 [aibox365.com](https://aibox365.com) - 官网同款体验，增强功能
+- 🥈 [mygpt.bid](https://uuu.mygpt.bid) - 支持gpt3.5
+- 🥉 [skybyte.me](https://cgs.skybyte.me) - 长期运营可用
 
 ## 💡 为什么选择 ChatGPT 中文版镜像站？
 
