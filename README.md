@@ -1,6 +1,5 @@
 # ChatGPT 中文版 | 国内直连使用 GPT-4o/o1/o3【最新更新】
 
-![ChatGPT中文版](https://i.imgur.com/PLACEHOLDER.png)
 
 ## 🚀 国内直连访问顶级AI模型，无需翻墙
 
